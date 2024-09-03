@@ -7,7 +7,7 @@ class Appwidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        debugShowCheckedModeBanner: true, home: Homepage());
+        debugShowCheckedModeBanner: false, home: Homepage());
   }
 }
 
