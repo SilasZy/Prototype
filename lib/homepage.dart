@@ -9,8 +9,8 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+        const SizedBox(
+          height: 20,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -85,7 +85,7 @@ class Homepage extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 13),
             Column(children: [
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:3580983286.
               Container(
