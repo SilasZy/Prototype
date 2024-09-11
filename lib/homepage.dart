@@ -69,7 +69,7 @@ class Homepage extends StatelessWidget {
             style: TextStyle(fontSize: 20, color: Colors.white)),
         const SizedBox(height: 10),
         SizedBox(
-          height: 125,
+          height: 100,
         ),
         Column(
           children: [
