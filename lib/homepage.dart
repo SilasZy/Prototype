@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -64,9 +63,14 @@ class Homepage extends StatelessWidget {
               fontFamily: AutofillHints.birthdayDay),
         ),
         const SizedBox(height: 20),
-        const Text('Manage your expenses', style: TextStyle(fontSize: 20, color: Colors.white)), 
-        const Text('seamlessly', style: TextStyle(fontSize: 20, color:  Colors.white)),
+        const Text('Manage your expenses',
+            style: TextStyle(fontSize: 20, color: Colors.white)),
+        const Text('seamlessly',
+            style: TextStyle(fontSize: 20, color: Colors.white)),
         const SizedBox(height: 10),
+        SizedBox(
+          height: 125,
+        ),
         Column(
           children: [
             Container(
@@ -94,37 +98,40 @@ class Homepage extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 245, 245, 248),
                     borderRadius: BorderRadius.circular(50)),
-               child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                SizedBox(
-    height: 20,
-                width: 30,
-                child: Image.asset(
-                    'assets/images/google-37.png'), 
-
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      height: 20,
+                      width: 30,
+                      child: Image.asset('assets/images/google-37.png'),
+                    ),
+                    const Text(
+                      'Sign Up with Google',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20,
+                          fontFamily: AutofillHints.birthdayDay),
+                    ),
+                  ],
                 ),
-                const Text(
-                  'Sign Up with Google',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20,
-                      fontFamily: AutofillHints.birthdayDay),
-                ),
-
-                
-               ],),
               ),
             ]),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children:  [
-                const  Text('Already have an account?', style: TextStyle(fontSize: 18, color: Colors.white)),
-                const SizedBox(width: 5), 
-                Text('Sign in', style: TextStyle(fontSize: 18, color: Colors.blue),), 
-               SizedBox(height: 100,)
-              ], 
-              
-
-            ) 
+              children: [
+                const Text('Already have an account?',
+                    style: TextStyle(fontSize: 18, color: Colors.white)),
+                const SizedBox(width: 5),
+                Text(
+                  'Sign in',
+                  style: TextStyle(fontSize: 18, color: Colors.blue),
+                ),
+                SizedBox(
+                  height: 100,
+                )
+              ],
+            )
           ],
         )
       ]),
@@ -132,5 +139,3 @@ class Homepage extends StatelessWidget {
     );
   }
 }
-
-            
